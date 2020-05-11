@@ -2,7 +2,7 @@
 
 [Repository, service e patterns]
 
-Nesse projeto fazer uso desses dois patterns dentro de uma aplicação back-end com NodeJS.
+Nesse projeto faço uso desses dois patterns dentro de uma aplicação back-end com NodeJS.
 
 
 Repository
@@ -19,7 +19,7 @@ Imagine uma aplicação que controla reserva de quartos em um hotel, uma pessoa 
 
 Se pensarmos nisso como uma consulta no banco, precisaremos realizar uma query um pouco complexa onde comparamos a data de entrada e saída com outras reservas já existentes na aplicação, buscando a disponibilidade do quarto.
 
-Em um cenário real, essa busca por disponibilidade de um quarto pode ser feita em várias partes da aplicação, a home page do site pode possuir uma busca prévia de disponibilidade, a reserva precisa verificar a disponibilidade, o atendente do hotel precisa conseguir 
+Em um cenário real, essa busca por disponibilidade de um quarto pode ser feita em várias partes da aplicação, a home page do site pode possuir uma busca prévia de disponibilidade, a reserva precisa verificar a disponibilidade, o atendente do hotel precisa conseguir
 verificar disponibilidade para reservas no balcão, ou seja, uma mesma query no banco de dados sendo utilizada em múltiplos contextos, por isso criamos isso em um Repository, reaproveitamento.
 
 
